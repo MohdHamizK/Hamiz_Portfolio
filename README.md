@@ -5,11 +5,12 @@
     </a>
   <br />
 
-  <h3 align="center">A 3D Developed Portfolio</h3>
-
+  <h3 align="center">A Data Analyst Portfolio</h3> 
 </div>
 
-This repository contains the code of my Portfolio.
+**This repository contains the code of my Portfolio.**
+
+Follow me on LinkedIn : [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammed-hamiz-k-5b1974272/)
 
 ## <a name="introduction">🤖 About</a>
 
