@@ -26,8 +26,8 @@ interface Project {
 export function ProjectsSection() {
   const projects: Project[] = [
     {
-      id: "aura",
-      title: "Aura – Personal AI Assistant",
+      id: "Rexiz",
+      title: "Rexiz – Personal AI Assistant",
       description: "An AI assistant that executes voice commands, automates tasks, and fetches real-time data.",
       date: "Feb 2025",
       technologies: ["Python", "Speech Recognition", "Open AI API", "Text-to-Speech (TTS)", "VS Code"],
@@ -41,6 +41,22 @@ export function ProjectsSection() {
         { name: "GitHub", url: "https://github.com/MohdHamizK/aura-ai-assistant", icon: <GithubIcon className="h-4 w-4" /> }
       ],
       image: "/projects/ai-assistant.png"
+    },
+    {
+      id: "data analytics",
+      title: "Data Analytics Project",
+      description: "A comprehensive data analytics project using Python and various libraries.",
+      date: "April 2025",
+      technologies: ["Python", "Excel", "Power BI", "Jupyter Notebook", "Pandas", "NumPy"],
+      bullets: [
+        "This project delves into the world of online electronics sales by analyzing a dataset from Amazon.",
+        "This exploration will aid in understanding market dynamics and potentially inform strategic business decisions.",
+        "Using Python libraries and guided by data science principles, we'll uncover valuable insights into customer behavior, product performance, and sales trends."
+      ],
+      links: [
+        { name: "GitHub", url: "https://github.com/MohdHamizK/Data-Analytics-Project", icon: <GithubIcon className="h-4 w-4" /> }
+      ],
+      image: "/projects/data-analytics.png"
     },
     {
       id: "attendance",

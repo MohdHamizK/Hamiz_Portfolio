@@ -17,16 +17,16 @@ interface Experience {
 export function ExperienceSection() {
   const experiences: Experience[] = [
     {
-      id: "deloitte",
+      id: "Cognifyz",
       title: "Data Analytics Internship",
-      company: "Deloitte",
-      location: "Virtual",
-      duration: "March 2025",
+      company: "Cognifyz",
+      location: "WFH",
+      duration: "April 2025",
       description: [
         "Extracted and analyzed large datasets using SQL and Python to support client projects.",
         "Developed interactive dashboards with Tableau, visualizing key insights for stakeholder presentations."
       ],
-      skills: ["SQL", "Python", "Tableau", "Data Analysis"]
+      skills: [ "Python", "Pandas", "Numpy", "Seaborn", "Data Analysis"]
     },
     {
       id: "operate-live",
