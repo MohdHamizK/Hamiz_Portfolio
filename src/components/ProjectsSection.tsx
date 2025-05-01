@@ -59,6 +59,22 @@ export function ProjectsSection() {
       image: "/projects/data-analytics.png"
     },
     {
+      id: "SQL Store Analysis",
+      title: "SQL Store Analysis Project",
+      description: "This project leverages SQL to query structured data, identify sales patterns, understand customer behavior, and assist in business decision-making.",
+      date: "April 2025",
+      technologies: ["SQL", "Excel", "Power BI", "MySQL", "Pandas", "NumPy"],
+      bullets: [
+        "The SQL Store Analysis project is a data- driven exploration and reporting system designed to uncover insights from a digital store's relational database.",
+        " This project leverages SQL to query structured data, identify sales patterns, understand customer behavior, and assist in business decision-making.",
+        " It demonstrates strong skills in database management, complex querying, and data analysis, ideal for showcasing practical knowledge in SQL and data interpretation."
+      ],
+      links: [
+        { name: "GitHub", url: "https://github.com/MohdHamizK/SQL-Store-Analysis", icon: <GithubIcon className="h-4 w-4" /> }
+      ],
+      image: "/projects/SQL-LOGO.png"
+    },
+    {
       id: "attendance",
       title: "Online Attendance Tracking System",
       description: "A web-based system for real-time, accurate attendance tracking, reducing manual errors.",
