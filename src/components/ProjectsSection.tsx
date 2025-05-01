@@ -38,7 +38,7 @@ export function ProjectsSection() {
         "Used text-to-speech (TTS) to generate human-like responses."
       ],
       links: [
-        { name: "GitHub", url: "https://github.com/MohdHamizK/aura-ai-assistant", icon: <GithubIcon className="h-4 w-4" /> }
+        { name: "GitHub", url: "https://github.com/MohdHamizK/Rexiz-AI", icon: <GithubIcon className="h-4 w-4" /> }
       ],
       image: "/projects/ai-assistant.png"
     },
@@ -86,7 +86,7 @@ export function ProjectsSection() {
         "Integrated data analytics for generating attendance reports and insights to optimize policies."
       ],
       links: [
-        { name: "GitHub", url: "https://github.com/MohdHamizK/attendance-tracker", icon: <GithubIcon className="h-4 w-4" /> }
+        { name: "GitHub", url: "https://github.com/MohdHamizK/Attendance-Tracking-System", icon: <GithubIcon className="h-4 w-4" /> }
       ],
       image: "/projects/attendance-system.png"
     }
