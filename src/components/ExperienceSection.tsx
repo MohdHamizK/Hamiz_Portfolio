@@ -39,7 +39,7 @@ export function ExperienceSection() {
         "Made basic social media web application to understand web development technologies.",
         "Utilized the process of loading the latest test files and generating a report of the results."
       ],
-      skills: ["Web Development", "HTML/CSS", "JavaScript", "Testing"]
+      skills: ["Web Development", "HTML/CSS", "JavaScript", "Testing", "Static Analysis"]
     }
   ];
 

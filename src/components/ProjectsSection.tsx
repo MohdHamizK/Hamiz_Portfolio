@@ -116,6 +116,7 @@ export function ProjectsSection() {
               <TabsTrigger value="python">Python</TabsTrigger>
               <TabsTrigger value="web">Web Development</TabsTrigger>
               <TabsTrigger value="ai">AI & Data</TabsTrigger>
+              <TabsTrigger value="sql">SQL & Excel</TabsTrigger>
             </TabsList>
           </div>
 
@@ -141,6 +142,18 @@ export function ProjectsSection() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
               {projects
                 .filter((project) => project.technologies.includes("HTML/CSS"))
+                .map((project) => (
+                  <ProjectCard key={project.id} project={project} />
+                ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="sql" className="mt-4 space-y-8">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+              {projects
+                .filter((project) => 
+                  project.technologies.includes("SQL") ||
+                  project.technologies.includes("Excel"))
                 .map((project) => (
                   <ProjectCard key={project.id} project={project} />
                 ))}
