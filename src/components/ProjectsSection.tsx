@@ -114,7 +114,7 @@ export function ProjectsSection() {
             <TabsList>
               <TabsTrigger value="all">All Projects</TabsTrigger>
               <TabsTrigger value="python">Python</TabsTrigger>
-              <TabsTrigger value="web">Web Development</TabsTrigger>
+              <TabsTrigger value="web">Web Development & Statistics</TabsTrigger>
               <TabsTrigger value="ai">AI & Data</TabsTrigger>
               <TabsTrigger value="sql">SQL & Excel</TabsTrigger>
             </TabsList>
