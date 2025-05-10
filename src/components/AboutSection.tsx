@@ -29,7 +29,7 @@ export function AboutSection() {
                 My Story
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                My name is Mohammed Hamiz K, a Computer Science and Business System student at Anna University-Vel Tech Multi Tech Engineering College with a CGPA of 7.5. I am passionate about data analytics and have developed strong skills in SQL, Python, and data visualization tools like Power BI and Tableau.
+                My name is Mohammed Hamiz K, a Computer Science and Business System student at Anna University-Vel Tech Multi Tech Engineering College with a CGPA of 7.3 . I am passionate about data analytics and have developed strong skills in SQL, Python, and data visualization tools like Power BI and Tableau.
               </p>
               <p className="text-gray-500 dark:text-gray-400">
                 I have completed relevant coursework in Python Programming, Microsoft Excel, SQL, Database Management, Dataiku DSS, Power BI, Tableau and various SQL variants including PSQL, MYSQL, and MS SQL. My journey in data analytics is supported by a strong foundation in these technical skills.
