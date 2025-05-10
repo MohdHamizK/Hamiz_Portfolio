@@ -51,8 +51,36 @@ export function EducationSection() {
       name: "SQL Completion Certificate",
       issuer: "Certificate Authority",
       date: "March, 2025",
-      link: "#"
-    }
+      link: "https://www.udemy.com/certificate/UC-46636a91-5741-46b7-91c1-aa25817088ac/"
+    },
+    {
+      id: "Intern-cert",
+      name: "Deloitte Certificate",
+      issuer: "Certificate Authority",
+      date: "March, 2025",
+      link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_tbyRTsNTqgGMupYvW_1743057927595_completion_certificate.pdf"
+    },
+    {
+      id: "python-cert",
+      name: "Python Completion Certificate",
+      issuer: "Certificate Authority",
+      date: "April, 2025",
+      link: "https://www.udemy.com/certificate/UC-5c683fbf-6734-4538-ae22-b207c9e990eb/"
+    },
+    {
+      id: "Google-cert1",
+      name: "Google Cloud Data Analytics",
+      issuer: "Google Cloud",
+      date: "May, 2025",
+      link: "https://www.cloudskillsboost.google/public_profiles/a483f721-25e4-4571-a2f7-621802243281/badges/15602010"
+    },
+    {
+      id: "Google-cert2",
+      name: "Prompt Design for Vertex AI",
+      issuer: "Google Cloud",
+      date: "May, 2025",
+      link: "https://www.cloudskillsboost.google/public_profiles/a483f721-25e4-4571-a2f7-621802243281/badges/15622329"
+    },
   ];
 
   const relevantCoursework = [
@@ -62,6 +90,7 @@ export function EducationSection() {
     "Database Management",
     "PSQL, MYSQL",
     "MS SQL",
+    "HTML/CSS&JS",
     "Power BI",
     "Dataiku DSS",
     "Tableau"
@@ -86,7 +115,7 @@ export function EducationSection() {
 
         <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-1 lg:grid-cols-2">
           <div className="space-y-8">
-            <h3 className="text-2xl font-bold">Education</h3>
+            <h3 className="text-2xl font-bold pl-28">Education</h3>
             {educationList.map((edu) => (
               <Card key={edu.id}>
                 <CardHeader className="pb-2">
@@ -130,7 +159,7 @@ export function EducationSection() {
           </div>
 
           <div className="space-y-8">
-            <h3 className="text-2xl font-bold">Certifications</h3>
+            <h3 className="text-2xl font-bold pl-20">Certifications</h3>
             {certifications.map((cert) => (
               <Card key={cert.id}>
                 <CardHeader className="pb-2">
@@ -145,13 +174,13 @@ export function EducationSection() {
                 <CardContent>
                   {cert.link && (
                     <a
-                      href={"https://www.udemy.com/certificate/UC-46636a91-5741-46b7-91c1-aa25817088ac/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-medium text-blue-600 hover:underline"
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-blue-600 hover:underline"
                     >
                       View Certificate
-                    </a>
+                      </a>
                   )}
                 </CardContent>
               </Card>

@@ -9,25 +9,34 @@ export function SkillsSection() {
   const technicalSkills = [
     { name: "Python", level: 90, icon: <CodeIcon className="h-5 w-5 text-blue-500" /> },
     { name: "SQL", level: 90, icon: <DatabaseIcon className="h-5 w-5 text-green-500" /> },
+    { name: "HTML/CSS", level: 80, icon: <BarChartIcon className="h-5 w-5 text-orange-500" /> },
+    { name: "JavaScript", level: 90, icon: <BarChartIcon className="h-5 w-5 text-yellow-500" /> },
+    { name: "Data Analysis", level: 90, icon: <BarChartIcon className="h-5 w-5 text-blue-500" /> },
+    { name: "Data Visualization", level: 80, icon: <BarChartIcon className="h-5 w-5 text-red-500" /> },
     { name: "Speech Recognition", level: 85, icon: <CodeIcon className="h-5 w-5 text-purple-500" /> },
     { name: "AI Automation", level: 80, icon: <CodeIcon className="h-5 w-5 text-yellow-500" /> },
     { name: "Microsoft Excel", level: 75, icon: <TableIcon className="h-5 w-5 text-green-500" /> },
-    { name: "Power BI", level: 95, icon: <BarChartIcon className="h-5 w-5 text-blue-500" /> },
-    { name: "Dataiku DSS", level: 95, icon: <CodeIcon className="h-5 w-5 text-red-500" /> },
-    { name: "Tableau", level: 95, icon: <BarChartIcon className="h-5 w-5 text-orange-500" /> },
   ];
 
   const developerTools = [
     { name: "VS Code", level: 90 },
     { name: "PyCharm", level: 85 },
     { name: "Jupyter Notebook", level: 80 },
+    { name: "GitBash", level: 90 },
+    { name: "GitHub", level: 90 },
+    { name: "Google Cloud", level: 85 },
+    { name: "Google Colab", level: 80 },
+    { name: "Power BI", level: 95 },
+    { name: "Tableau", level: 95 },
+    { name: "Dataiku DSS", level: 95 },
   ];
 
   const databaseSkills = [
     { name: "ORACLE SQL", level: 80 },
-    { name: "PSQL", level: 95 },
+    { name: "PostgreSQL", level: 95 },
     { name: "MYSQL", level: 90 },
     { name: "MS SQL", level: 85 },
+    { name: "NOSQL", level: 85 },
   ];
 
   return (
@@ -123,7 +132,7 @@ export function SkillsSection() {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-4">Other Skills</h3>
               <Separator className="my-4" />
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-1">
                 <div className="space-y-2">
                   <div className="font-medium">Languages</div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">

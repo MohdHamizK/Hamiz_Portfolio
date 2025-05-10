@@ -18,7 +18,7 @@ export function AboutSection() {
               Data-Driven and Dedicated
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              A computer science student with a passion for data analytics, ready to make an impact
+              A Computer Science & Business Systems student with a passion for data analytics to make an impact
             </p>
           </div>
         </div>
@@ -59,7 +59,7 @@ export function AboutSection() {
                     <div className="grid gap-1">
                       <div className="font-medium">Address</div>
                       <div className="text-sm text-gray-500 dark:text-gray-400">
-                        317/1, Rashad Nagar, Arabic College, Bangalore-560045
+                        Arabic College, Bangalore-560045
                       </div>
                     </div>
                     <div className="grid gap-1">
