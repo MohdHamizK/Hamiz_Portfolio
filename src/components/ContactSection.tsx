@@ -30,6 +30,47 @@ export function ContactSection() {
     const templateId = 'template_t996qwy'; 
     const publicKey = '8dU2LPGSNMlo0vc8c'; 
 
+    const { name, email, subject, message } = formData;
+
+    
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('Please enter a valid email address format.');
+      return;
+    }
+    if (!email.includes('@gmail.com')) { 
+      alert('Only Gmail addresses are allowed.'); 
+      return;
+    }
+    if (!email.includes('.com')) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+    if (name.length < 3) {
+      alert('Name must be at least 3 characters long.');
+      return;
+    }
+    if (message.length < 10) {
+      alert('Message must be at least 10 characters long.');
+      return;
+    }
+    if (subject.length < 5) {
+      alert('Subject must be at least 5 characters long.');
+      return;
+    }
+    if (message.length > 500) {
+      alert('Message must be less than 500 characters.');
+      return;
+    }
+    if (name.length > 50) {
+      alert('Name must be less than 50 characters.');
+      return;
+    }
+    if (subject.length > 100) {
+      alert('Subject must be less than 100 characters.');
+      return;
+    }
+    
+
     console.log('Sending data:', { serviceId, templateId, formData, publicKey });
     console.log('Form Data:', formData);
 
