@@ -32,7 +32,7 @@ export function EducationSection() {
       field: "COMPUTER SCIENCE AND BUSINESS SYSTEM",
       location: "Chennai",
       duration: "2021-2025",
-      grade: "CGPA -7.5"
+      grade: "CGPA -7.3"
     },
     {
       id: "adarsh",

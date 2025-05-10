@@ -3,8 +3,47 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { PhoneIcon, GithubIcon, LinkedinIcon, InstagramIcon, MailIcon, MapPinIcon } from "lucide-react";
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export function ContactSection() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (event: React.FormEvent) => {
+    console.log('handleSubmit Called');
+    event.preventDefault();
+    // EmailJS service ID, template ID, and public key
+    const serviceId = 'service_9n8puei'; 
+    const templateId = 'template_t996qwy'; 
+    const publicKey = '8dU2LPGSNMlo0vc8c'; 
+
+    console.log('Sending data:', { serviceId, templateId, formData, publicKey });
+    console.log('Form Data:', formData);
+
+    emailjs.send(serviceId, templateId, formData, publicKey)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' }); 
+      }, (error) => {
+        console.log('FAILED...', error);
+        alert('Failed to send message. Please try again later.');
+      });
+  };
+
   return (
     <section id="contact" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
       <div className="container px-4 md:px-6">
@@ -72,7 +111,7 @@ export function ContactSection() {
                   <div>
                     <div className="font-medium">Location</div>
                     <div className="text-sm text-gray-500 dark:text-gray-400">
-                      317/1, Rashad Nagar, Arabic College, Bangalore-560045
+                      Arabic College, Bangalore-560045
                     </div>
                   </div>
                 </CardContent>
@@ -122,16 +161,19 @@ export function ContactSection() {
             <h3 className="text-2xl font-bold">Send Me a Message</h3>
             <Card>
               <CardContent className="p-6">
-                <form className="grid gap-4">
+                <form onSubmit={handleSubmit} className="grid gap-4">
                   <div className="grid gap-2">
                     <label htmlFor="name" className="text-sm font-medium">
                       Name
                     </label>
                     <input
                       id="name"
+                      name="name" 
                       className="border-2 border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="Your name"
                       required
+                      value={formData.name} 
+                      onChange={handleChange} 
                     />
                   </div>
                   <div className="grid gap-2">
@@ -141,9 +183,12 @@ export function ContactSection() {
                     <input
                       id="email"
                       type="email"
+                      name="email" 
                       className="border-2 border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="Your email"
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="grid gap-2">
@@ -152,9 +197,13 @@ export function ContactSection() {
                     </label>
                     <input
                       id="subject"
+                      type="text"
+                      name="subject" 
                       className="border-2 border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="Subject of your message"
                       required
+                      value={formData.subject} 
+                      onChange={handleChange} 
                     />
                   </div>
                   <div className="grid gap-2">
@@ -163,10 +212,14 @@ export function ContactSection() {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
+                      rows={4} 
                       className="border-2 border-gray-200 rounded-md px-3 py-2 min-h-32 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="Your message"
                       required
-                    />
+                      value={formData.message}
+                      onChange={handleChange} 
+                    ></textarea>
                   </div>
                   <Button type="submit" className="w-full">
                     Send Message
