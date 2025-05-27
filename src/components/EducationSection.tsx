@@ -185,35 +185,6 @@ export function EducationSection() {
                 </CardContent>
               </Card>
             ))}
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Other Skills</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-medium mb-2">Languages</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>English</Badge>
-                    <Badge>Hindi</Badge>
-                    <Badge>Tamil</Badge>
-                    <Badge>Urdu</Badge>
-                  </div>
-                </div>
-
-                <Separator />
-
-                <div>
-                  <h4 className="font-medium mb-2">Soft Skills</h4>
-                  <ul className="space-y-2 text-sm text-gray-500 dark:text-gray-400 pl-5 list-disc">
-                    <li>Time management tools and techniques to plan, schedule, and execute tasks</li>
-                    <li>Commitment to continuous learning to stay current with the latest industry trends</li>
-                    <li>Fast learner, quickly adapting to new technologies and challenges</li>
-                    <li>Strong problem-solving and communication skills</li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

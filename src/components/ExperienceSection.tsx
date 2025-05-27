@@ -21,12 +21,13 @@ export function ExperienceSection() {
       title: "Data Analytics Internship",
       company: "Cognifyz",
       location: "WFH",
-      duration: "April 2025",
+      duration: "May 2025",
       description: [
         "Extracted and analyzed large datasets using SQL and Python to support client projects.",
-        "Developed interactive dashboards with Tableau, visualizing key insights for stakeholder presentations."
+        "Integrated interactive dashboards with Power BI, visualizing key insights for stakeholder presentations.",
+        "Performed end-to-end data preprocessing including handling missing values, encoding categorical features, and feature scaling."
       ],
-      skills: [ "Python", "Pandas", "Numpy", "Seaborn", "Data Analysis"]
+      skills: [ "Python", "Pandas", "NumPy", "SeaBorn", "Data Analysis"]
     },
     {
       id: "operate-live",
@@ -40,6 +41,19 @@ export function ExperienceSection() {
         "Utilized the process of loading the latest test files and generating a report of the results."
       ],
       skills: ["Web Development", "HTML/CSS", "JavaScript", "Testing", "Static Analysis"]
+    },
+    {
+      id: "Codelevate",
+      title: "Data Analytics Internship",
+      company: "Heal Bharat",
+      location: "WFH",
+      duration: "June 2025",
+      description: [
+        "Conducted exploratory data analysis (EDA) to identify vital trends and feature correlations impacting patient recovery.",
+        "Enhanced a predictive machine learning model to forecast patient recovery outcomes using vitals and clinical data from a synthetic EHR dataset.",
+        "Implemented classification models (Logistic Regression, Random Forest) and evaluated performance using ROC- AUC, F1-score, and confusion matrix."
+      ],
+      skills: [ "Python", "Pandas", "Numpy", "Excel", "Matplotlib", "Data Analysis"]
     }
   ];
 

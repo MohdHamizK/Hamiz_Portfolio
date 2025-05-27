@@ -130,11 +130,11 @@ export function SkillsSection() {
         <div className="mx-auto max-w-5xl">
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-4">Other Skills</h3>
+              <h3 className="text-xl font-bold mb-4">Soft Skills</h3>
               <Separator className="my-4" />
               <div className="grid gap-4 md:grid-cols-1">
                 <div className="space-y-2">
-                  <div className="font-medium">Languages</div>
+                  <div className="font-medium">Languages Known</div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
                     Proficient in English, Hindi, Tamil and Urdu.
                   </p>
@@ -154,7 +154,7 @@ export function SkillsSection() {
                 <div className="space-y-2">
                   <div className="font-medium">Adaptability</div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Fast learner, quickly adapting to new technologies and challenges, thriving in collaborative environments.
+                    An Autodidact, quickly adapting to new technologies and challenges, thriving in collaborative environments.
                   </p>
                 </div>
               </div>
