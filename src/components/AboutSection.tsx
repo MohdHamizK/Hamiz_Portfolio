@@ -94,13 +94,13 @@ export function AboutSection() {
                     </div>
                     <div className="grid gap-1">
                       <div className="font-medium">Mail</div>
-                      <div className="text-sm text-blue-700 text-blue-950 dark:text-blue-900 relative group">
+                      <div className="text-sm text-blue-700 text-blue-450 dark:text-blue-500 relative group">
                         <a href="mailto:kattekarhamiz25@gmail.com">kattekarhamiz25@gmail.com</a>
                       </div>
                     </div>
                     <div className="grid gap-1">
                       <div className="font-medium">LinkedIn</div>
-                      <div className="text-sm text-blue-700 text-blue-950 dark:text-blue-900 relative group">
+                      <div className="text-sm text-blue-700 text-blue-450 dark:text-blue-500 relative group">
                         <a href="https://www.linkedin.com/in/mohammedhamizk"  target="_blank" rel="noopener noreferrer">
                           Mohammed Hamiz K
                         </a>
@@ -108,7 +108,7 @@ export function AboutSection() {
                     </div>
                     <div className="grid gap-1">
                       <div className="font-medium">Instagram</div>
-                      <div className="text-sm text-blue-700 text-blue-950 dark:text-blue-900 relative group">
+                      <div className="text-sm text-blue-700 text-blue-450 dark:text-blue-500 relative group">
                         <a href="https://www.instagram.com/_mohd_hamiz_k/" target="_blank" rel="noopener noreferrer">
                           Mohd_Hamiz_K
                         </a>
@@ -116,7 +116,7 @@ export function AboutSection() {
                     </div>
                     <div className="grid gap-1">
                       <div className="font-medium">GitHub</div>
-                      <div className="text-sm text-blue-700 text-blue-950 dark:text-blue-900 relative group">
+                      <div className="text-sm text-blue-700 text-blue-450 dark:text-blue-500 relative group">
                         <a href="https://github.com/MohdHamizK" target="_blank" rel="noopener noreferrer">
                           MohdHamizK
                         </a>
