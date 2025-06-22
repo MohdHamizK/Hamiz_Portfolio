@@ -17,6 +17,19 @@ interface Experience {
 export function ExperienceSection() {
   const experiences: Experience[] = [
     {
+      id: "Codelevate",
+      title: "Data Analytics Internship",
+      company: "Heal Bharat",
+      location: "WFH",
+      duration: "June 2025",
+      description: [
+        "Conducted exploratory data analysis (EDA) to identify vital trends and feature correlations impacting patient recovery.",
+        "Enhanced a predictive machine learning model to forecast patient recovery outcomes using vitals and clinical data from a synthetic EHR dataset.",
+        "Implemented classification models (Logistic Regression, Random Forest) and evaluated performance using ROC- AUC, F1-score, and confusion matrix."
+      ],
+      skills: [ "Python", "Pandas", "Numpy", "Excel", "Matplotlib", "Data Analysis"]
+    },
+    {
       id: "Cognifyz",
       title: "Data Analytics Internship",
       company: "Cognifyz",
@@ -34,26 +47,13 @@ export function ExperienceSection() {
       title: "Web Developer Internship",
       company: "Operate Live",
       location: "Bangalore, Karnataka",
-      duration: "April 2023 – May 2023",
+      duration: "April 2023",
       description: [
         "Helped in creating various web application projects.",
         "Made basic social media web application to understand web development technologies.",
         "Utilized the process of loading the latest test files and generating a report of the results."
       ],
       skills: ["Web Development", "HTML/CSS", "JavaScript", "Testing", "Static Analysis"]
-    },
-    {
-      id: "Codelevate",
-      title: "Data Analytics Internship",
-      company: "Heal Bharat",
-      location: "WFH",
-      duration: "June 2025",
-      description: [
-        "Conducted exploratory data analysis (EDA) to identify vital trends and feature correlations impacting patient recovery.",
-        "Enhanced a predictive machine learning model to forecast patient recovery outcomes using vitals and clinical data from a synthetic EHR dataset.",
-        "Implemented classification models (Logistic Regression, Random Forest) and evaluated performance using ROC- AUC, F1-score, and confusion matrix."
-      ],
-      skills: [ "Python", "Pandas", "Numpy", "Excel", "Matplotlib", "Data Analysis"]
     }
   ];
 

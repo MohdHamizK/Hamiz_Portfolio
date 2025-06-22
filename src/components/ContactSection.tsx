@@ -174,7 +174,7 @@ export function ContactSection() {
                     </Button>
                     <Button variant="outline" size="icon" asChild>
                       <a
-                        href="https://www.linkedin.com/in/mohammed-hamiz-k-5b1974272/"
+                        href="https://www.linkedin.com/in/mohammedhamizk"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="LinkedIn Profile"

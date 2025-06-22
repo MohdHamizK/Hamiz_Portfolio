@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://www.linkedin.com/in/mohammed-hamiz-k-5b1974272/" target="_blank">
+    <a href="https://www.linkedin.com/in/mohammedhamizk" target="_blank">
       <img src="ReadMET.png" alt="Project Banner">
     </a>
   <br />
@@ -10,7 +10,7 @@
 
 **This repository contains the code of my Portfolio.**
 
-Follow me on LinkedIn : [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammed-hamiz-k-5b1974272/)
+Follow me on LinkedIn : [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammedhamizk)
 
 Follow me on Kaggle : [![](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)](https://www.kaggle.com/mohammedhamizk)
 

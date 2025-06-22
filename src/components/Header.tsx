@@ -3,6 +3,12 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { DownloadIcon, GithubIcon, LinkedinIcon, InstagramIcon, MailIcon } from "lucide-react";
+import InteractiveThread from './InteractiveThread';
+
+const handleResumeClick = () => {
+  console.log("User clicked Resume button");
+  // Optional: Track event or GA4
+};
 
 export function Header() {
   return (
@@ -54,10 +60,7 @@ export function Header() {
         <div className="flex items-center justify-end space-x-2">
           <div className="flex items-center">
             <Button variant="outline" size="icon" asChild className="mr-2">
-              <a
-                href="mailto:kattekarhamiz25@gmail.com"
-                title="Email me"
-              >
+              <a href="mailto:kattekarhamiz25@gmail.com" title="Email me">
                 <MailIcon className="h-4 w-4" />
               </a>
             </Button>
@@ -73,7 +76,7 @@ export function Header() {
             </Button>
             <Button variant="outline" size="icon" asChild className="mr-2">
               <a
-                href="https://www.linkedin.com/in/mohammed-hamiz-k-5b1974272/"
+                href="https://www.linkedin.com/in/mohammedhamizk"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="LinkedIn Profile"
@@ -91,16 +94,15 @@ export function Header() {
                 <InstagramIcon className="h-4 w-4" />
               </a>
             </Button>
-            <Button asChild>
-              <a
-                href="/resume.pdf"
-                download
-                title="Download Resume"
-              >
+            <span id="resumeButton" className="inline-block">
+            <Button asChild id="resumeButton">
+              <a href="/MdHamizK_Data_Analyst_Resume.pdf" download title="Download My Resume">
                 <DownloadIcon className="h-4 w-4 mr-2" />
                 Resume
               </a>
             </Button>
+            </span>
+            <InteractiveThread buttonId="resumeButton" onClickAction={handleResumeClick} />
           </div>
         </div>
       </div>

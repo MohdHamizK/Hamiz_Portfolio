@@ -35,7 +35,7 @@
     "build/types/**/*.ts",
     "next-env.d.ts",
     "out/types/**/*.ts"
-  ],
+, "src/components/InteractiveThread.tsx"  ],
   "exclude": [
     "node_modules"
   ]

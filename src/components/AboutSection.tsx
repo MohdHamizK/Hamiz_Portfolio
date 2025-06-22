@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Separator } from "./ui/separator";
@@ -29,13 +29,37 @@ export function AboutSection() {
                 My Story
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                My name is Mohammed Hamiz K, a Computer Science and Business System student at Anna University-Vel Tech Multi Tech Engineering College with a CGPA of 7.3 . I am passionate about data analytics and have developed strong skills in SQL, Python, and data visualization tools like Power BI and Tableau.
+                My name is Mohammed Hamiz K, a Computer Science and Business System student at Anna University-Vel Tech Multi Tech Engineering College with a CGPA of 7.3 . I am passionate about data analytics and have {" "} 
+                <Link 
+                  href="#projects" 
+                  className="transition-colors hover:text-blue-700 text-blue-500 dark:text-blue-400 relative group"
+                >
+                  <span className="relative z-10">"developed"</span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
+                </Link>{" "} 
+                strong skills in SQL, Python, and data visualization tools like Power BI and Tableau.
               </p>
               <p className="text-gray-500 dark:text-gray-400">
-                I have completed relevant coursework in Python Programming, Microsoft Excel, SQL, Database Management, Dataiku DSS, Power BI, Tableau and various SQL variants including PSQL, MYSQL, and MS SQL. My journey in data analytics is supported by a strong foundation in these technical skills.
+                I have completed relevant {" "} 
+                <Link 
+                  href="#education" 
+                  className="transition-colors hover:text-blue-700 text-blue-500 dark:text-blue-400 relative group"
+                >
+                  <span className="relative z-10">"coursework"</span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
+                </Link>{" "}
+                in Python Programming, Microsoft Excel, SQL, Database Management, Dataiku DSS, Power BI, Tableau and various SQL variants including PSQL, MYSQL, and MS SQL. My journey in data analytics is supported by a strong foundation in these technical skills.
               </p>
               <p className="text-gray-500 dark:text-gray-400">
-                Recently, I completed a Data Analytics Internship at Deloitte where I extracted and analyzed large datasets using SQL and Python to support client projects. I also developed interactive dashboards with Tableau, visualizing key insights for stakeholder presentations.
+                Recently, I completed 3 Data Analytics Internships at{" "}
+                <Link 
+                  href="#experience" 
+                  className="transition-colors hover:text-blue-700 text-blue-500 dark:text-blue-400 relative group"
+                >
+                  <span className="relative z-10">"Experience"</span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
+                </Link>{" "}
+                where I extracted and analyzed large datasets using SQL and Python to support client projects. I also developed interactive dashboards with Tableau, visualizing key insights for stakeholder presentations.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -70,20 +94,21 @@ export function AboutSection() {
                     </div>
                     <div className="grid gap-1">
                       <div className="font-medium">Mail</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">
+                      <div className="text-sm text-blue-700 text-blue-950 dark:text-blue-900 relative group">
                         <a href="mailto:kattekarhamiz25@gmail.com">kattekarhamiz25@gmail.com</a>
                       </div>
                     </div>
                     <div className="grid gap-1">
                       <div className="font-medium">LinkedIn</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">
-                        <a href="https://www.linkedin.com/in/mohammed-hamiz-k-5b1974272/" target="_blank" rel="noopener noreferrer">
+                      <div className="text-sm text-blue-700 text-blue-950 dark:text-blue-900 relative group">
+                        <a href="https://www.linkedin.com/in/mohammedhamizk"  target="_blank" rel="noopener noreferrer">
                           Mohammed Hamiz K
                         </a>
                       </div>
+                    </div>
                     <div className="grid gap-1">
                       <div className="font-medium">Instagram</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">
+                      <div className="text-sm text-blue-700 text-blue-950 dark:text-blue-900 relative group">
                         <a href="https://www.instagram.com/_mohd_hamiz_k/" target="_blank" rel="noopener noreferrer">
                           Mohd_Hamiz_K
                         </a>
@@ -91,14 +116,13 @@ export function AboutSection() {
                     </div>
                     <div className="grid gap-1">
                       <div className="font-medium">GitHub</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">
+                      <div className="text-sm text-blue-700 text-blue-950 dark:text-blue-900 relative group">
                         <a href="https://github.com/MohdHamizK" target="_blank" rel="noopener noreferrer">
                           MohdHamizK
                         </a>
                         </div>
                       </div>
                     </div>
-                  </div>
                 </CardContent>
               </Card>
             </div>
